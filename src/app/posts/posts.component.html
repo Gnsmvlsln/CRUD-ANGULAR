@@ -1,0 +1,19 @@
+<!-- <p>
+  posts works!
+</p> -->
+<div class="container">
+  <div class="row">
+    <input 
+    #title
+        type="text" 
+        (keyup.enter)="createPost(title)"/>
+        <button>update</button>
+    <ul *ngFor = "let data of posts">
+      <li>Name: {{data.name}} 
+        <button class="btn btn-primary" (click)="updatePost(data,title)">UPDATE</button>
+        <button class="btn btn-primary" (click)="deletePost(data)">DELETE</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
